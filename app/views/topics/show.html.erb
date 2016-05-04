@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="small-2 large-2 columns">
+    <%= imdb_style_rating_for @topic, current_user%>
+  </div>
+  <br>
+  <div class="small-2 large-4 columns">
+    <% if current_user %>
+      Overrall Rating: <%= rating_for @topic, "overrall" %>
+      <br>
+      Gameplay: <%= rating_for @topic, "gameplay" %>
+      <br>
+      Immersion: <%= rating_for @topic, "immersion" %>
+      <br>
+      Art: <%= rating_for @topic, "art" %>
+      <br>
+      Replayability: <%= rating_for @topic, "replayability" %>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "Home", root_path %>

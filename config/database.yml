@@ -1,0 +1,18 @@
+development: &default
+  adapter: mysql2
+  database: ratethings
+  encoding: utf8
+  host: localhost
+  username: root
+  password: ""
+  min_messages: warning
+  pool: 2
+  timeout: 5000
+
+test:
+  <<: *default
+  database: ratethings
+
+production:
+  <<: *default
+  database: ratethings

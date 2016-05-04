@@ -1,0 +1,7 @@
+<div>
+  <% @topics.each do |t| %>
+    <%= link_to t.name, topic_path(t.id) %>
+    <br>
+    <%= t.decription %>
+  <% end %>
+</div>

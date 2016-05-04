@@ -1,0 +1,14 @@
+<%= form_for @topic do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <br/>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :decription %>
+    <br/>
+    <%= f.text_field :decription %>
+  </div>
+    <%= f.submit 'Save' %>
+<% end %>
+
