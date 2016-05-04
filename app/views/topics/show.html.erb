@@ -7,21 +7,21 @@
     <% if current_user %>
       How would you rate how cool this item is?
       <br>
-      Coolness: <%= rating_for @topic, "coolness" %>
+      Coolness: <%= rating_for @topic, "coolness", :enable_half => true%>
       <br>
       How difficult is this item to use/learn?
       <br>
-      Difficulty: <%= rating_for @topic, "difficulty" %>
+      Difficulty: <%= rating_for @topic, "difficulty", :enable_half => true %>
       <br>
       Gnarly name?
       <br>
-      Name: <%= rating_for @topic, "name" %>
+      Name: <%= rating_for @topic, "name", :enable_half => true %>
       <br>
-      Art Style: <%= rating_for @topic, "art" %>
+      Art Style: <%= rating_for @topic, "art", :enable_half => true %>
       <br>
       Would you use this item again?
       <br>
-      Replayability: <%= rating_for @topic, "replayability" %>
+      Replayability: <%= rating_for @topic, "replayability", :enable_half => true %>
     <% end %>
   </div>
 </div>
