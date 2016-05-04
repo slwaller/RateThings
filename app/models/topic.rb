@@ -1,3 +1,3 @@
 class Topic < ActiveRecord::Base
-  ratyrate_rateable 'overrall', 'gameplay', 'immersion', 'art', 'replayability'
+  ratyrate_rateable 'coolness', 'difficulty', 'name', 'art', 'replayability'
 end

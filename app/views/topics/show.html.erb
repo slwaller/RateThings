@@ -5,13 +5,21 @@
   <br>
   <div class="small-2 large-4 columns">
     <% if current_user %>
-      Overrall Rating: <%= rating_for @topic, "overrall" %>
+      How would you rate how cool this item is?
       <br>
-      Gameplay: <%= rating_for @topic, "gameplay" %>
+      Coolness: <%= rating_for @topic, "coolness" %>
       <br>
-      Immersion: <%= rating_for @topic, "immersion" %>
+      How difficult is this item to use/learn?
       <br>
-      Art: <%= rating_for @topic, "art" %>
+      Difficulty: <%= rating_for @topic, "difficulty" %>
+      <br>
+      Gnarly name?
+      <br>
+      Name: <%= rating_for @topic, "name" %>
+      <br>
+      Art Style: <%= rating_for @topic, "art" %>
+      <br>
+      Would you use this item again?
       <br>
       Replayability: <%= rating_for @topic, "replayability" %>
     <% end %>

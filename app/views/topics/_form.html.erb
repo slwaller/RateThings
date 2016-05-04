@@ -5,10 +5,12 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :decription %>
+    <%= f.label :decription, 'Description' %>
     <br/>
     <%= f.text_field :decription %>
   </div>
     <%= f.submit 'Save' %>
 <% end %>
+
+<%= link_to 'Home', root_path %>
 
